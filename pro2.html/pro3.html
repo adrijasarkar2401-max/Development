@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: grey
+        }
+
+        #navbar {
+            background-color: #C0B9DD;
+            height: 7vw;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+        a {
+            text-decoration: none;
+            margin-right: 150px;
+            padding-right: 20px;
+        }
+
+        #list1 {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        a[href="#logo"] {
+            color: #F7F4EA;
+            font-size: 22px;
+        }
+
+        marquee {
+            height: 30px;
+            background-color: #DED9E2;
+            color: blanchedalmond;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+        }
+
+        marquee a {
+            text-decoration: none;
+        }
+
+        img {
+            width: 100%;
+            height: 30vh;
+            object-fit: fill;
+            object-position: center center;
+            color: #F7F4EA;
+        }
+
+        h3 {
+            font-size: 20px;
+            text-align: center;
+            background-color: #DED9E2;
+        }
+
+        table {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            margin-left: 20px;
+            padding: 20px;
+            border-spacing: 50px 10px;
+
+        }
+
+        .programs {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .prog {
+            width: 30%;
+
+        }
+
+
+        legend {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        button {
+            background-color: #C0B9DD;
+            color: #F7F4EA;
+            align-items: center;
+
+
+        }
+
+        fieldset {
+            padding-bottom: 30px;
+        }
+
+        main {
+            float: left;
+            width: 70%;
+            border: 2px solid rgb(142, 141, 141);
+            padding-bottom: 50px;
+
+        }
+
+        aside {
+            float: right;
+            width: 25%;
+            border: 2px solid rgb(142, 141, 141);
+            padding-bottom: 50px;
+        }
+
+        footer {
+            display: flex;
+            height: 100px;
+            background-color: #C0B9DD;
+            clear: both;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav id="navbar">
+                <ul id="list1">
+                    <li><a href="#logo">ABC COLLEGE</a></li>
+                    <li><a href="#Home">HOME</a></li>
+                    <li><a href="#Admission">ADMISSION</a></li>
+                    <li><a href="#About Us">ABOUT US</a></li>
+                    <li><a href="#Contact US">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <marquee><a href="#Admission">Admissions open for 2026 📢</a></marquee>
+    <section id="Campus">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/hatley-castle-royalty-free-image-1715786362.jpg?crop=0.655xw:1.00xh;0.185xw,0"
+            alt="Campus">
+        <h3>WELCOME TO ABC COLLEGE</h3>
+    </section>
+    <section>
+        <table>
+            <tr>
+                <th><u>ADMISSONS EVERY YEAR</u></th>
+                <th><u>PLACEMENTS</u></th>
+                <th><u>ACHIEVEMENTS</u></th>
+                <th><u>PROGRAMS OFFERED</u></th>
+            </tr>
+            <tr>
+                <td>10,00,000 Admissions Every year</td>
+                <td>Guaranteed placments</td>
+                <td>Students in top companies</td>
+                <td>From TECHNOLOGY to DESIGN</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <fieldset>
+            <legend><b>Courses/Programs Offered</b></legend>
+            <div class="programs">
+                <div class="prog">
+                    <h3>B.Tech</h3>
+                    <ol>
+                        <li>Computer Science Engineering</li>
+                        <li>Mechanical Engineering</li>
+                        <li>Electrical Engineering</li>
+
+                    </ol><br>
+                    <button id="btech">Apply Now</button>
+                </div>
+                <div class="prog">
+                    <h3>B.Des</h3>
+                    <ol>
+                        <li>Fashion & Textile Design</li>
+                        <li>Product Design</li>
+                        <li>Graphic Design</li>
+
+                    </ol><br>
+                    <button id="bdes">Apply Now</button>
+                </div>
+                <div class="prog">
+                    <h3>BCA & MCA</h3><br><br><br><br>
+                    <button id="bca">Apply Now</button>
+                </div>
+            </div>
+        </fieldset><br><br>
+        <fieldset>
+
+        </fieldset>
+        <div id="news">
+            <main>
+
+                <h3>About us</h3>
+                <p>Not many students can brag about having a castle on campus, but those at Royal Roads University in
+                    British Columbia certainly can. The centerpiece of the 642-acre campus is the Victorian-style Hatley
+                    Castle, which now serves as the administrative center of the university and is also designated as a
+                    National Historic Site.</p>
+
+            </main>
+
+
+            <aside>
+
+                <h3>Latest Updates</h3>
+                <p>New Digital Library opening</p>
+                <p>New Issue of Campus Newspaper Available</p>
+                <p>Check Out Even more Campus New </p>
+            </aside>
+        </div><br><br>
+
+    </section>
+    <footer>
+        <div id="footer">
+            <p>© 2026 ABC College All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

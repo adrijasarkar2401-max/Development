@@ -1,0 +1,17 @@
+span {
+    color: red;
+}
+
+#box1 {
+    height: 300px;
+    width: 200px;
+    background-color: aliceblue;
+    border: 2px solid black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

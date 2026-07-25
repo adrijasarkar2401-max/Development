@@ -1,0 +1,24 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color:blue;
+    border-width: 2px;
+    border-style: solid;
+    border-color:brown;
+    /*border-radius: 50% ---> circle*/
+    border-radius: 10px;
+    padding: 1px 2px 3px 4px;
+}
+h1{
+    color: beige;
+    height: 50px;
+    width: 150px;
+    background-color:aquamarine;
+    /*border-width: 6px;
+    border-style: dashed;
+    border-color:black;*/
+    border: 6px dashed beige;
+    padding: 50px;
+    text-align: center;
+    text-transform: capitalize;
+}

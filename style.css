@@ -1,0 +1,40 @@
+h3{
+    color: greenyellow;
+    text-decoration: olivedrab dashed overline;
+}
+#head1{
+    color: greenyellow;
+    text-decoration: olivedrab dashed overline;
+    font-weight: bolder;
+}
+
+#head2{
+    color: greenyellow;
+    text-decoration: olivedrab dashed overline;
+    font-weight: 700;
+}
+
+#head3{
+    color: greenyellow;
+    text-decoration: olivedrab dashed overline;
+    font-weight: normal;
+}
+
+#para1{
+    color:aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+#para2{
+    color:aliceblue;
+    font-family: arial;
+    font-size: 10px;
+    line-height: 20px ;
+}
+body{
+    background-color :#007BA7;
+}
+button{
+    color: burlywood;
+    background-color: powderblue;
+}

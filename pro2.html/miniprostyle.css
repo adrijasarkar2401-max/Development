@@ -1,0 +1,12 @@
+.navbar{
+    background-color: pink;
+    display:flex;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color:rgb(74, 156, 228);
+}
+li{
+    list-style-type: none;
+}
