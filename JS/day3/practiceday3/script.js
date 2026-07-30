@@ -1,3 +1,5 @@
+//ARRAYS
+
 //Q. create array with 3 fruits and print the second fruit
 let fruits=["lychee","peaches","apples"];
 console.log(fruits[1]);
@@ -68,3 +70,83 @@ countries=["India",...countries];
 //clone this array
 let arr6=[1,2,3]
 let newarr6=[...arr6];
+
+//OBJECTS
+
+//Q. create an object for a student with name, age and isEnrolled
+let student={
+    name:"adrija",
+    age:21,
+    isEnrolled:true
+};
+//can the key of a object be a number or a boolean
+let obj={
+    true:"yes",
+    42:"answer"
+};
+console.log(obj[42]);//yes it can be
+//acess the value of firstname
+const username={
+    firstname:"adrija",
+};
+username.firstname;
+//given a dynamic key let key= "age",ow will you access it?
+let key="age";
+let user={
+    age:21,
+};
+user[key];
+//from the object below print the latitude
+const locations={
+    city:"bhopal",
+    coordinates:{
+        lat:23.2,
+        lng:77.4,
+    }
+};
+console.log(locations.coordinates.lat);
+//if coordinates is missing,what will happen?how can you prevent that error
+console.log(location?.coordinates?.lat);
+//destructure the city and lat from the locatio object
+let {city}=locations;
+let{lat}=locations.coordinates;
+//destructure the key first-name asa variable called firstName
+const user2={
+    "first-Name":"adrija"
+}
+let {"first-Name":firstName2}=user2;
+//use for in to print all keys in this object
+const course={
+    title:"JavaScript",
+    duration:"4 weeks"
+};
+for(let key in course){
+    console.log(key);
+}
+//use object.entries to print all key-value pairs as 
+//title:javascript
+//console.log(Object.entries(course));
+Object.entries(course).forEach(function(val){
+    console.log(val[0]+":"+val[1]);
+});
+// copy this object using spread operator
+const original={
+    a:1,
+    b:2
+};
+const copy={...original};
+//deep clone this obj:
+/*const obj1={info: {
+    score:80
+}
+}
+let clone={...obj1};
+clone.info.score=100;
+console.log(clone.info.score);*/
+const obj1={info: {
+    score:80
+}
+}
+let clone=JSON.parse(JSON.stringify(obj1));
+clone.info.score=100;
+console.log(clone);
