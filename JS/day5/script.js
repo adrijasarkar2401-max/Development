@@ -25,3 +25,13 @@ input.addEventListener("input",function(dets){
         console.log(dets.data)
     }
 })
+//change-->works when there's a change in input select or textarea 
+let sel=document.querySelector("select");
+sel.addEventListener("change",function(dets){
+    console.log(dets.target.value);
+})
+let device=document.querySelector("#device");
+sel.addEventListener("change",function(dets){
+    //device.textContent= "Device selected"
+    device.textContent=`${dets.target.value} selected`;
+})
