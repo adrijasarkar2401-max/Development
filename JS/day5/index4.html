@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            position:relative;
+            overflow: hidden; /*dont use this code on your body*/
+        }
+        /* the above code is written to stop the page from extendind when the div goes outside the page */
+        #abcd{
+            position: absolute;
+            /* code will not work if the position is not absolute */
+            /* transition: cubic-bezier(0.19, 1, 0.22, 1) 1s; */
+            height: 400px;
+            width: 400px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="abcd"></div>
+    <script src="script4.js"></script>
+</body>
+
+</html>
